@@ -17,9 +17,9 @@ app.set('port', (process.argv[3] || process.env.PORT || 8000));
 
 server.listen(app.get('port'), () => {
     console.log(
-        'Serving content from directory '
+        'Serving content from directory "'
         + (process.argv[2] || 'public')
-        + 'on: http://localhost:' + app.get('port') + '/'
+        + '" on: http://localhost:' + app.get('port') + '/'
     );
 });
 
