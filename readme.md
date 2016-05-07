@@ -1,6 +1,6 @@
 # public-server
 
-Install: `npm install https://github.com/ksiondag/public-server`
+Install: `npm install -g https://github.com/ksiondag/public-server`
 
 Usage: `public-server [static-directory] [port]`
 
