@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 var path = require('path');
 
 var express = require('express');
@@ -16,6 +16,10 @@ app.use('/', express.static(
 app.set('port', (process.argv[3] || process.env.PORT || 8000));
 
 server.listen(app.get('port'), () => {
-    console.log('Server started: http://localhost:' + app.get('port') + '/');
+    console.log(
+        'Serving content from directory '
+        + (process.argv[2] || 'public')
+        + 'on: http://localhost:' + app.get('port') + '/'
+    );
 });
 
